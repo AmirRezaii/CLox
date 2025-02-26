@@ -3,4 +3,6 @@
 *.log
 tmp/
 
+build/
+nob
 *.o
