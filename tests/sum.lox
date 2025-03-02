@@ -1,0 +1,15 @@
+fun sum(n) {
+    var sum = 0;
+    for (var i = 0; i < n; i = i + 1) {
+        sum = sum + i;
+    }
+
+    return sum;
+}
+
+var start = clock();
+var result = sum(100000);
+print "result:";
+print result;
+print "time:";
+print clock() - start;

@@ -1,0 +1,27 @@
+var GlobalGet;
+var GlobalSet;
+
+fun Vec() {
+    var x = 10;
+    var y = 5;
+
+    fun getVec() {
+        print x;
+        print y;
+    }
+    fun setVec(i, j) {
+        x = i;
+        y = j;
+    }
+
+    GlobalGet = getVec;
+    GlobalSet = setVec;
+}
+
+Vec();
+
+print "vec";
+GlobalGet();
+GlobalSet(20, 10);
+print "vec";
+GlobalGet();
