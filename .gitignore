@@ -4,4 +4,7 @@
 tmp/
 
 build/
+nob*
+!nob.h
+!nob.c
 *.o
